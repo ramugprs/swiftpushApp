@@ -47,6 +47,7 @@
 		97B71DD41EFE2BE000C5711F /* samplePushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = samplePushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B71DD81EFE2BE000C5711F /* samplePushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samplePushUITests.swift; sourceTree = "<group>"; };
 		97B71DDA1EFE2BE000C5711F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B71DE61EFE2CBD00C5711F /* samplePush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = samplePush.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		97B71DB71EFE2BE000C5711F /* samplePush */ = {
 			isa = PBXGroup;
 			children = (
+				97B71DE61EFE2CBD00C5711F /* samplePush.entitlements */,
 				97B71DB81EFE2BE000C5711F /* AppDelegate.swift */,
 				97B71DBA1EFE2BE000C5711F /* ViewController.swift */,
 				97B71DBC1EFE2BE000C5711F /* Main.storyboard */,
@@ -193,15 +195,23 @@
 				TargetAttributes = {
 					97B71DB41EFE2BE000C5711F = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = MZU2NLA2VP;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					97B71DC81EFE2BE000C5711F = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MZU2NLA2VP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 97B71DB41EFE2BE000C5711F;
 					};
 					97B71DD31EFE2BE000C5711F = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MZU2NLA2VP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 97B71DB41EFE2BE000C5711F;
 					};
@@ -337,9 +347,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rajesh C (W4F9CZKZ3U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MZU2NLA2VP;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -359,6 +370,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "536e5081-c94f-44c7-9795-9658c7694445";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -387,9 +399,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rajesh C (W4F9CZKZ3U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MZU2NLA2VP;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -402,6 +415,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "536e5081-c94f-44c7-9795-9658c7694445";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -412,10 +426,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = samplePush/samplePush.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rajesh C (W4F9CZKZ3U)";
+				DEVELOPMENT_TEAM = MZU2NLA2VP;
 				INFOPLIST_FILE = samplePush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ios.samplePush;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindtree.Demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "536e5081-c94f-44c7-9795-9658c7694445";
+				PROVISIONING_PROFILE_SPECIFIER = "Demo1 Development Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +443,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = samplePush/samplePush.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rajesh C (W4F9CZKZ3U)";
+				DEVELOPMENT_TEAM = MZU2NLA2VP;
 				INFOPLIST_FILE = samplePush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ios.samplePush;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindtree.Demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "536e5081-c94f-44c7-9795-9658c7694445";
+				PROVISIONING_PROFILE_SPECIFIER = "Demo1 Development Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
