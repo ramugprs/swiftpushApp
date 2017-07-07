@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9739F7C51F0F5CFA00C42BE1 /* classVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739F7C41F0F5CFA00C42BE1 /* classVC.swift */; };
 		97B71DB91EFE2BE000C5711F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B71DB81EFE2BE000C5711F /* AppDelegate.swift */; };
 		97B71DBB1EFE2BE000C5711F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B71DBA1EFE2BE000C5711F /* ViewController.swift */; };
 		97B71DBE1EFE2BE000C5711F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B71DBC1EFE2BE000C5711F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9739F7C41F0F5CFA00C42BE1 /* classVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classVC.swift; sourceTree = "<group>"; };
 		97B71DB51EFE2BE000C5711F /* samplePush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samplePush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B71DB81EFE2BE000C5711F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B71DBA1EFE2BE000C5711F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				97B71DE61EFE2CBD00C5711F /* samplePush.entitlements */,
 				97B71DB81EFE2BE000C5711F /* AppDelegate.swift */,
 				97B71DBA1EFE2BE000C5711F /* ViewController.swift */,
+				9739F7C41F0F5CFA00C42BE1 /* classVC.swift */,
 				97B71DBC1EFE2BE000C5711F /* Main.storyboard */,
 				97B71DBF1EFE2BE000C5711F /* Assets.xcassets */,
 				97B71DC11EFE2BE000C5711F /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 			files = (
 				97B71DBB1EFE2BE000C5711F /* ViewController.swift in Sources */,
 				97B71DB91EFE2BE000C5711F /* AppDelegate.swift in Sources */,
+				9739F7C51F0F5CFA00C42BE1 /* classVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +533,7 @@
 				97B71DDF1EFE2BE000C5711F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97B71DE01EFE2BE000C5711F /* Build configuration list for PBXNativeTarget "samplePushTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +542,7 @@
 				97B71DE21EFE2BE000C5711F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97B71DE31EFE2BE000C5711F /* Build configuration list for PBXNativeTarget "samplePushUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +551,7 @@
 				97B71DE51EFE2BE000C5711F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
